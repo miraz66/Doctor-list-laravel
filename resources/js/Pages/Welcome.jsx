@@ -1,3 +1,4 @@
+import Headers from "@/Components/Headers";
 import { Link, Head } from "@inertiajs/react";
 
 export default function Welcome({ auth, laravelVersion, phpVersion }) {
@@ -11,6 +12,9 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
   return (
     <>
       <Head title="Welcome" />
+
+      <Headers />
+
       <div className="bg-gray-50 text-black/50 dark:bg-black dark:text-white/50 h-screen">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
           <div className="text-center">
