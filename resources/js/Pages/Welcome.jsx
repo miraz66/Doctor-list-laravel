@@ -1,5 +1,7 @@
 import Headers from "@/Components/Headers";
-import { Link, Head } from "@inertiajs/react";
+import { Head } from "@inertiajs/react";
+import { MDXProvider } from "@mdx-js/react";
+import File from "@/Pages/TLC_FILE/affordable-cosmetic-surgery-loan/affordable-cosmetic-surgery-loan.mdx";
 
 export default function Welcome({ auth, laravelVersion, phpVersion }) {
   const handleImageError = () => {
@@ -15,22 +17,12 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
 
       <Headers />
 
-      <div className="bg-gray-50 text-black/50 dark:bg-black dark:text-white/50 h-screen">
+      <div className="bg-gray-50 text-black/50 dark:bg-black dark:text-white/80">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-              Welcome to Laravel
-            </h1>
-            <p className="mt-6 text-xl leading-8">
-              Laravel is a web application framework with expressive, elegant
-              syntax. We’ve been building a framework like this for
-              years—sophisticated, but simple.
-            </p>
-            <p className="mt-6 text-xl leading-8">
-              Laravel’s approach to application development is clean and
-              expressive, and all of the tools needed to build your next project
-              are available on the documentation site.
-            </p>
+          <div className="">
+            <MDXProvider>
+              <File />
+            </MDXProvider>
           </div>
         </div>
       </div>
