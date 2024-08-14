@@ -5,13 +5,14 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class JobSeeder extends Seeder
+class DoctorJobSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        \App\Models\Job::factory(10)->create();
+
+        \App\Models\DoctorJob::factory(10)->create();
     }
 }
